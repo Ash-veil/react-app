@@ -1,7 +1,19 @@
+import { AuthContext } from "../context/authContext";
+import { useContext } from "react";
+import { useNavigate} from "react-router-dom";
 
 
 const NavBar = () => {
+  const {logout} = useContext(AuthContext)
+  const navigate = useNavigate()
 
+  const handleLogout = async ( e ) => {
+    e.preventDefault();
+    const loggedOutUser = await logout()
+    if( loggedOutUser ){
+        navigate("/")
+    }
+}
   return (
 <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <a className="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
@@ -19,7 +31,7 @@ const NavBar = () => {
           <li><a className="dropdown-item" href="#!">Settings</a></li>
           <li><a className="dropdown-item" href="#!">Activity Log</a></li>
           <li><hr className="dropdown-divider" /></li>
-          <li><a className="dropdown-item" href="#!">Logout</a></li>
+          <li><a onClick={handleLogout} className="dropdown-item" href="#!">Logout</a></li>
         </ul>
       </li>
     </ul>

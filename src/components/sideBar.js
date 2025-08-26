@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useAuth } from "../context/authContext"
 
 const SideBar = () => {
+  const { user } = useAuth()
   return (
     <div id="layoutSidenav_nav">
       <nav className="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -61,7 +63,7 @@ const SideBar = () => {
         </div>
         <div className="sb-sidenav-footer">
           <div className="small">Logged in as:</div>
-          Start Bootstrap
+          {user?.username}
         </div>
       </nav>
     </div>
