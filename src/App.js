@@ -7,7 +7,8 @@ import PublicRoute from "./context/publicRoutes";
 
 import Layout from "./layout/layout";
 import Dashboard from "./pages/dashboard";
-import Customers from "./pages/customers";
+import Customers from "./pages/customers/customers";
+import ShowCustomer from "./pages/customers/showCustomer";
 import NotFound from "./pages/notFound";
 import Register from "./pages/auth/register";
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Layout/>}>
               <Route index element={<ProtectedRoute> <Dashboard /> </ProtectedRoute>} />
               <Route path="/customers" element={<ProtectedRoute> <Customers /> </ProtectedRoute>} />
+              <Route path="/customers/:id" element={<ProtectedRoute> <ShowCustomer /> </ProtectedRoute>} />
             </Route>
             <Route path="/register" element={<PublicRoute> <Register /> </PublicRoute>} />
 

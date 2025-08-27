@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
-import BreadCrumb from "../components/partials/breadCrumb";
-import { getCustomers } from "../api.js/customers";
+import BreadCrumb from "../../components/partials/breadCrumb";
+import { getCustomers } from "../../api/customers";
+import { Link } from "react-router-dom";
 const Customers = () => {
   const [customers, setCustomers] = useState([]);
   const list = async () => {
@@ -36,9 +37,9 @@ const Customers = () => {
                 </ul>
               </div>
               <div class="card-footer d-flex align-items-center justify-content-between">
-                <a class="small text-white stretched-link" href="#">
+                <Link class="small text-white stretched-link" to={`/customers/${item.id}`}>
                   View Details
-                </a>
+                </Link>
               </div>
             </div>
           </div>
