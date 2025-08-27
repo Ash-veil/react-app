@@ -15,34 +15,34 @@ const ShowCustomer = () => {
   return (
     <div className="container-fluid px-4">
       <BreadCrumb currentPage={`Customer`} />
-      <div class="">
+      <div className="">
         <div
-          class="container d-flex justify-content-center align-items-center"
+          className="container d-flex justify-content-center align-items-center"
         
         >
-          <div class="card profile-card shadow  mt-4">
-            <div class="card-body text-center">
+          <div className="card profile-card shadow  mt-4">
+            <div className="card-body text-center">
               <img
                 src="/img/avatar.png"
                 alt="User Profile"
-                class="rounded-circle profile-img mb-3"
+                className="rounded-circle profile-img mb-3"
               />
-              <h3 class="card-title mb-0">{customer.name}</h3>
-              <p class="text-muted">{customer.job}</p>
-              <p class="card-text">
+              <h3 className="card-title mb-0">{customer.name}</h3>
+              <p className="text-muted">{customer.job}</p>
+              <p className="card-text">
                 Passionate web developer with years of experience in creating
                 responsive and user-friendly websites.
               </p>
 
-              <ul class="list-group list-group-flush mb-3">
-                <li class="list-group-item bg-transparent">
-                  <i class="fas fa-lg fa-envelope"></i>{customer.email}
+              <ul className="list-group list-group-flush mb-3">
+                <li className="list-group-item bg-transparent">
+                  <i className="fas fa-lg fa-envelope"></i>{customer.email}
                 </li>
-                <li class="list-group-item bg-transparent">
-                  <i class="fas fa-lg fa-building"></i>{customer.address}
+                <li className="list-group-item bg-transparent">
+                  <i className="fas fa-lg fa-building"></i>{customer.address}
                 </li>
-                <li class="list-group-item bg-transparent">
-                  <i class="fas fa-lg fa-phone"></i>{customer.phone}
+                <li className="list-group-item bg-transparent">
+                  <i className="fas fa-lg fa-phone"></i>{customer.phone}
                 </li>
               </ul>
 

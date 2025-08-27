@@ -23,21 +23,21 @@ const Customers = () => {
   return (
     <div className="container-fluid px-4">
       <BreadCrumb currentPage="Customers" />
-      <div class="row">
+      <div className="row">
         {currentCustomers.map((item) => (
-          <div class="col-xl-3 col-md-6 border-primary" key={item.id}>
-            <div class="card bg-secondary text-white mb-4">
-              <div class="card-body">
-                <h5 class="card-title">{item.name}</h5>
-                <p class="card-text">{item.description}</p>
-                <ul class="">
-                  <li class="list-group-item">Email: {item.email}</li>
-                  <li class="list-group-item">Phone: {item.phone}</li>
-                  <li class="list-group-item">Address: {item.address}</li>
+          <div className="col-xl-3 col-md-6 border-primary" key={item.id}>
+            <div className="card bg-secondary text-white mb-4">
+              <div className="card-body">
+                <h5 className="card-title">{item.name}</h5>
+                <p className="card-text">{item.description}</p>
+                <ul className="">
+                  <li className="list-group-item">Email: {item.email}</li>
+                  <li className="list-group-item">Phone: {item.phone}</li>
+                  <li className="list-group-item">Address: {item.address}</li>
                 </ul>
               </div>
-              <div class="card-footer d-flex align-items-center justify-content-between">
-                <Link class="small text-white stretched-link" to={`/customers/${item.id}`}>
+              <div className="card-footer d-flex align-items-center justify-content-between">
+                <Link className="small text-white stretched-link" to={`/customers/${item.id}`}>
                   View Details
                 </Link>
               </div>

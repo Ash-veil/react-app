@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const BreadCrumb = ({currentPage}) => {
+const BreadCrumb = ({ currentPage }) => {
   return (
     <>
       <h1 className="mt-4"> {currentPage} </h1>

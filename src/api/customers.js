@@ -295,6 +295,6 @@ export const getCustomers = () => {
 
 export const getOneCustomer = (id) => {
   const customer = customers.find((c) => c.id === Number(id));
-  console.log(customer)
+  console.log(customer);
   return customer;
 };
