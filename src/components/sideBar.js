@@ -46,9 +46,6 @@ const SideBar = () => {
                 <NavLink className="nav-link" to="/customers">
                   Customers
                 </NavLink>
-                <NavLink className="nav-link" to="/coming-soon">
-                  Products
-                </NavLink>
               </nav>
             </div>
 
@@ -75,10 +72,7 @@ const SideBar = () => {
               data-bs-parent="#sidenavAccordion"
             >
               <nav className="sb-sidenav-menu-nested nav">
-                <NavLink className="nav-link" to="/coming-soon">
-                  Revenue
-                </NavLink>
-                <NavLink className="nav-link" to="/coming-soon">
+                <NavLink className="nav-link" to="/expenses">
                   Expenses
                 </NavLink>
               </nav>
