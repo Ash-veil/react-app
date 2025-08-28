@@ -1,6 +1,6 @@
 import { AuthContext } from "../context/authContext";
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const { logout } = useContext(AuthContext);
@@ -16,7 +16,7 @@ const NavBar = () => {
   return (
     <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
       <a className="navbar-brand ps-3" href="index.html">
-        Start Bootstrap
+        React-Dash
       </a>
       <button
         className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
@@ -60,14 +60,14 @@ const NavBar = () => {
             aria-labelledby="navbarDropdown"
           >
             <li>
-              <a className="dropdown-item" href="#!">
+              <NavLink className="dropdown-item" to="/coming-soon">
                 Settings
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="dropdown-item" href="#!">
-                Activity Log
-              </a>
+              <NavLink className="dropdown-item" to="/coming-soon">
+                Profile
+              </NavLink>
             </li>
             <li>
               <hr className="dropdown-divider" />

@@ -11,6 +11,7 @@ import Customers from "./pages/customers/customers";
 import ShowCustomer from "./pages/customers/showCustomer";
 import NotFound from "./pages/notFound";
 import Register from "./pages/auth/register";
+import ComingSoon from "./pages/comingSoon"
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
               <Route index element={<ProtectedRoute> <Dashboard /> </ProtectedRoute>} />
               <Route path="/customers" element={<ProtectedRoute> <Customers /> </ProtectedRoute>} />
               <Route path="/customers/:id" element={<ProtectedRoute> <ShowCustomer /> </ProtectedRoute>} />
+              <Route path="/coming-soon" element={<ProtectedRoute> <ComingSoon /> </ProtectedRoute>} />
             </Route>
             <Route path="/register" element={<PublicRoute> <Register /> </PublicRoute>} />
 

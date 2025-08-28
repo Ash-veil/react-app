@@ -20,7 +20,7 @@ const SideBar = () => {
             </NavLink>
             <div className="sb-sidenav-menu-heading">Interface</div>
 
-            <a
+            <NavLink
               className="nav-link collapsed"
               href="#"
               data-bs-toggle="collapse"
@@ -35,7 +35,7 @@ const SideBar = () => {
               <div className="sb-sidenav-collapse-arrow">
                 <i className="fas fa-angle-down" />
               </div>
-            </a>
+            </NavLink>
             <div
               className="collapse"
               id="collapseLayouts"
@@ -46,13 +46,13 @@ const SideBar = () => {
                 <NavLink className="nav-link" to="/customers">
                   Customers
                 </NavLink>
-                <a className="nav-link" href="layout-sidenav-light.html">
+                <NavLink className="nav-link" to="/coming-soon">
                   Products
-                </a>
+                </NavLink>
               </nav>
             </div>
 
-            <a
+            <NavLink
               className="nav-link collapsed"
               href="#"
               data-bs-toggle="collapse"
@@ -67,7 +67,7 @@ const SideBar = () => {
               <div className="sb-sidenav-collapse-arrow">
                 <i className="fas fa-angle-down" />
               </div>
-            </a>
+            </NavLink>
             <div
               className="collapse"
               id="collapseFinance"
@@ -75,18 +75,18 @@ const SideBar = () => {
               data-bs-parent="#sidenavAccordion"
             >
               <nav className="sb-sidenav-menu-nested nav">
-                <a className="nav-link" href="layout-static.html">
+                <NavLink className="nav-link" to="/coming-soon">
                   Revenue
-                </a>
-                <a className="nav-link" href="layout-static.html">
+                </NavLink>
+                <NavLink className="nav-link" to="/coming-soon">
                   Expenses
-                </a>
+                </NavLink>
               </nav>
             </div>
 
-            <a
+            <NavLink
               className="nav-link collapsed"
-              href="#"
+              to="/coming-soon"
               data-bs-toggle="collapse"
               data-bs-target="#collapseAnalytics"
               aria-expanded="false"
@@ -99,7 +99,7 @@ const SideBar = () => {
               <div className="sb-sidenav-collapse-arrow">
                 <i className="fas fa-angle-down" />
               </div>
-            </a>
+            </NavLink>
             <div
               className="collapse"
               id="collapseAnalytics"
@@ -107,25 +107,25 @@ const SideBar = () => {
               data-bs-parent="#sidenavAccordion"
             >
               <nav className="sb-sidenav-menu-nested nav">
-                <a className="nav-link" href="layout-static.html">
+                <NavLink className="nav-link" to="/coming-soon">
                   Reports
-                </a>
+                </NavLink>
               </nav>
             </div>
 
             <div className="sb-sidenav-menu-heading">Addons</div>
-            <a className="nav-link" href="charts.html">
+            <NavLink className="nav-link" to="/coming-soon">
               <div className="sb-nav-link-icon">
                 <i className="fas fa-chart-area" />
               </div>
               Profile
-            </a>
-            <a className="nav-link" href="tables.html">
+            </NavLink>
+            <NavLink className="nav-link" to="/coming-soon">
               <div className="sb-nav-link-icon">
                 <i className="fas fa-table" />
               </div>
               Settings
-            </a>
+            </NavLink>
           </div>
         </div>
         <div className="sb-sidenav-footer">
