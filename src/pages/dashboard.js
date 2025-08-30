@@ -1,16 +1,21 @@
-import React from "react";
 import CardsRow from "../components/cardsRow";
-import Charts from "../components/charts";
+import BreadCrumb from "../components/partials/breadCrumb";
+import ExpensesType from "./reports/charts/expensesType";
+import ExpenseRevenueLines from "./reports/charts/expenseRevenueLines";
 
 const Dashboard = () => {
   return (
     <div className="container-fluid px-4">
-      <h1 className="mt-4">Dashboard</h1>
-      <ol className="breadcrumb mb-4">
-        <li className="breadcrumb-item active">Dashboard</li>
-      </ol>
+      <BreadCrumb currentPage="Main" />
       <CardsRow />
-      <Charts />
+      <div className="row">
+        <div className="col-xl-8">
+          <ExpenseRevenueLines />
+        </div>
+        <div className="col-xl-4">
+          <ExpensesType />
+        </div>
+      </div>
     </div>
   );
 };
