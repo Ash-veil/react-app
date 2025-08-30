@@ -106,7 +106,7 @@ const SideBar = () => {
               data-bs-parent="#sidenavAccordion"
             >
               <nav className="sb-sidenav-menu-nested nav">
-                <NavLink className="nav-link" to="/coming-soon">
+                <NavLink className="nav-link" to="/reports">
                   Reports
                 </NavLink>
               </nav>

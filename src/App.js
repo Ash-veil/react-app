@@ -14,6 +14,7 @@ import Register from "./pages/auth/register";
 import ComingSoon from "./pages/comingSoon"
 import Expenses from "./pages/expenses/expenses";
 import Revenues from "./pages/revenues/revenues";
+import Reports from "./pages/reports/reports";
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
               <Route path="/customers/:id" element={<ProtectedRoute> <ShowCustomer /> </ProtectedRoute>} />
               <Route path="/expenses" element={<ProtectedRoute> <Expenses /> </ProtectedRoute>} />
               <Route path="/revenues" element={<ProtectedRoute> <Revenues /> </ProtectedRoute>} />
+              <Route path="/reports" element={<ProtectedRoute> <Reports /> </ProtectedRoute>} />
 
               <Route path="/coming-soon" element={<ProtectedRoute> <ComingSoon /> </ProtectedRoute>} />
             </Route>
