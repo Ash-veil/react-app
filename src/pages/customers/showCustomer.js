@@ -15,40 +15,6 @@ const ShowCustomer = () => {
   return (
     <div className="container-fluid px-4">
       <BreadCrumb currentPage={`Customer`} />
-      {/* <div className="">
-        <div className="container d-flex justify-content-center align-items-center">
-          <div className="card profile-card shadow  mt-4">
-            <div className="card-body text-center">
-              <img
-                src="/img/avatar.png"
-                alt="User Profile"
-                className="rounded-circle profile-img mb-3"
-              />
-              <h3 className="card-title mb-0">{customer.name}</h3>
-              <p className="text-muted">{customer.job}</p>
-              <p className="card-text">
-                Passionate web developer with years of experience in creating
-                responsive and user-friendly websites.
-              </p>
-
-              <ul className="list-group list-group-flush mb-3">
-                <li className="list-group-item bg-transparent">
-                  <i className="fas fa-lg fa-envelope"></i>
-                  {customer.email}
-                </li>
-                <li className="list-group-item bg-transparent">
-                  <i className="fas fa-lg fa-building"></i>
-                  {customer.address}
-                </li>
-                <li className="list-group-item bg-transparent">
-                  <i className="fas fa-lg fa-phone"></i>
-                  {customer.phone}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div class="row">
         <div class="col-lg-4">
           <div class="card mb-4">
@@ -63,14 +29,7 @@ const ShowCustomer = () => {
               <p class="text-muted mb-1">{customer.job}</p>
               <p class="text-muted mb-4">{customer.address}</p>
               <div class="d-flex justify-content-center mb-2">
-                <button
-                  type="button"
-                  data-mdb-button-init
-                  data-mdb-ripple-init
-                  class="btn btn-primary"
-                >
-                  Follow
-                </button>
+               
                 <button
                   type="button"
                   data-mdb-button-init
