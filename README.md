@@ -66,7 +66,7 @@ Runs locally on: [http://localhost:3000](http://localhost:3000)
 ## 🌍 Deployment
 
 Can be deployed on:  
-- **Vercel** → react-dashboard-app-opal.vercel.app/  
+- **Vercel** → [https://react-dashboard-app-opal.vercel.app](https://react-dashboard-app-opal.vercel.app)  
 
 ---
 
